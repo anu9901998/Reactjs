@@ -1,5 +1,5 @@
 import React from 'react'
-import {Stack} from '@mui/material'
+import {Stack,Typography} from '@mui/material'
 import { categories } from '../utils/constants'
 const Sidebar = () => {
     const selectedCategory='New'
@@ -14,6 +14,9 @@ const Sidebar = () => {
             </button>
         ))
      }
+      <Typography className='copyright' variant='body2' sx={{mt:1.5,color:'#fff'}}>
+            Copyright 2022 
+       </Typography>
     </Stack>
   )
 }
